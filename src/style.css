@@ -88,6 +88,13 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
   .hero-note { position: static; align-self: flex-start; margin-top: 0; line-height: 1.6; }
   .hero-bio { margin-top: 30px; max-width: 620px; }
 }
+@media (min-width: 701px) and (max-height: 850px) {
+  .hero { padding-top: 70px; padding-bottom: 42px; }
+  h1 { margin-top: 32px; }
+  .hero-bottom { margin-top: 80px; }
+  .hero-note { margin-top: 16px; }
+  .hero-bio { margin-top: 18px; }
+}
 @media (max-width: 700px) {
   .site-header, .section-wrap, .site-footer { width: min(100% - 40px, 1240px); }
   .site-header { height: 70px; position: relative; gap: 12px; }
