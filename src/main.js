@@ -1,9 +1,12 @@
 import './style.css'
 
+window.history.scrollRestoration = 'manual'
+
 if (window.location.hash) {
   window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`)
-  window.scrollTo(0, 0)
 }
+
+requestAnimationFrame(() => window.scrollTo(0, 0))
 
 const projects = [
   {
