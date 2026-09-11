@@ -47,9 +47,10 @@ document.querySelector('#app').innerHTML = `
     <section class="hero section-wrap">
       <div class="hero-kicker"><span class="status-dot"></span> Techpreneur • Product builder • Kenya</div>
       <h1>Building digital ideas<br /><em>that move people.</em></h1>
-      <div class="hero-bottom"><p class="hero-intro">I help founders, startups, and ambitious teams turn bold ideas into products, brands, and digital experiences with real traction.</p><a class="round-link" href="#about" aria-label="Scroll to About section"><span>↓</span></a></div>
+      <div class="hero-bottom"><p class="hero-intro">I help founders, startups, and ambitious teams turn bold ideas into products, brands, and digital experiences with real traction.</p></div>
       <div class="hero-note">Available for product, brand, and digital growth work <span>↗</span></div>
       <div class="hero-bio"><p>I'm a Kenyan techpreneur focused on building useful digital systems, meaningful brands, and ventures that turn strategy into traction. I work best where product thinking, design clarity, and execution meet.</p></div>
+      <a class="hero-next round-link" href="#about" aria-label="Scroll to About section"><span>↓</span></a>
     </section>
     <section id="about" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">00 / About</p><p class="section-aside">Building ideas with clarity<br />and a long-term view.</p></div>
