@@ -48,7 +48,7 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
 .filter-button { cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--muted); padding: 10px 14px; transition: all .2s ease; }
 .filter-button:hover, .filter-button.is-active { border-color: var(--ink); background: var(--ink); color: var(--paper); }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.project-card { background: rgba(255, 255, 255, 0.08); border: 1px solid transparent; border-radius: 24px; padding: 12px; transition: border-color .2s ease, transform .2s ease; }
+.project-card { background: rgba(255, 255, 255, 0.08); border: 1px solid transparent; border-radius: 8px; padding: 12px; transition: border-color .2s ease, transform .2s ease; }
 .project-card:hover { border-color: var(--line); transform: translateY(-2px); }
 .project-card[hidden] { display: none; }
 .project-image { display: block; position: relative; overflow: hidden; background: #ddd; aspect-ratio: 1 / 1.05; }
