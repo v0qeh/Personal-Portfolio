@@ -125,9 +125,9 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
   .hero-kicker { flex-wrap: wrap; max-width: 270px; line-height: 1.7; }
   .kicker-line { display: none; }
   h1 { margin-top: 24px; font-size: clamp(48px, 13vw, 68px); }
-  .hero-bottom { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px; margin-top: 38px; padding-bottom: 0; }
+  .hero-bottom { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; gap: 16px; margin-top: 38px; padding-bottom: 0; }
   .hero-intro { width: auto; max-width: 100%; min-width: 0; font-size: 13px; line-height: 1.5; }
-  .round-link { grid-column: 2; grid-row: 1; align-self: end; width: 46px; height: 46px; margin-left: 0; }
+  .round-link { grid-column: 1; grid-row: 1; align-self: end; width: 46px; height: 46px; margin-left: 0; }
   .hero-note { position: static; align-self: flex-start; max-width: 100%; margin-top: 0; line-height: 1.45; overflow-wrap: anywhere; }
   .hero-bio { margin-top: 20px; padding-top: 14px; }
   .hero-bio p { font-size: 13px; line-height: 1.5; }
@@ -135,6 +135,7 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
   .section-heading { align-items: flex-start; gap: 24px; }
   .section-heading .eyebrow { flex: 0 0 auto; }
   .section-aside { flex: 0 1 160px; max-width: 160px; }
+  .section-next { margin-left: 0; margin-right: auto; }
   .filter-row { margin-top: 50px; flex-wrap: wrap; }
   .filter-button { min-height: 42px; }
   .project-grid { grid-template-columns: 1fr; gap: 42px; }
@@ -154,7 +155,7 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
   .site-header, .section-wrap, .site-footer { width: calc(100% - 32px); }
   .hero { min-height: calc(100svh - 70px); padding-top: 30px; padding-bottom: 32px; }
   h1 { font-size: clamp(44px, 14vw, 58px); }
-  .hero-bottom { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; margin-top: 30px; padding-bottom: 0; }
+  .hero-bottom { grid-template-columns: auto minmax(0, 1fr); gap: 12px; margin-top: 30px; padding-bottom: 0; }
   .hero-intro { max-width: 100%; }
   .round-link { align-self: flex-end; margin-left: auto; }
   .section-heading { gap: 12px; }
