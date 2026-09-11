@@ -139,7 +139,7 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
   .site-header, .section-wrap, .site-footer { width: calc(100% - 32px); }
   .hero-bottom { align-items: start; flex-direction: column; padding-bottom: 24px; }
   .hero-intro { max-width: 230px; }
-  .round-link { align-self: flex-end; }
+  .round-link { align-self: flex-end; margin-left: auto; }
   .section-heading { gap: 20px; }
   .section-aside { max-width: 125px; }
   .filter-button { padding-inline: 10px; }
