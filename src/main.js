@@ -41,7 +41,7 @@ document.querySelector('#app').innerHTML = `
       <span></span>
       <span></span>
     </button>
-    <a class="header-cta" href="mailto:neynjauke@gmail.com">Let's talk <span>↗</span></a>
+    <a class="header-cta" href="mailto:qevohnjau@gmail.com">Let's talk <span>↗</span></a>
   </header>
   <main id="top">
     <section class="hero section-wrap">
@@ -64,7 +64,7 @@ document.querySelector('#app').innerHTML = `
       <div class="section-heading"><p class="eyebrow">01 / Selected focus</p><p class="section-aside">A few directions shaping<br />my work right now.</p></div>
       <div class="filter-row" role="group" aria-label="Filter selected focus"><button class="filter-button is-active" data-filter="All">All focus</button><button class="filter-button" data-filter="Branding">Branding</button><button class="filter-button" data-filter="Web design">Web design</button><button class="filter-button" data-filter="Campaigns">Campaigns</button></div>
       <div class="project-grid">${projects.map(projectMarkup).join('')}</div>
-      <div class="work-footer"><span>More work available on request</span><a href="mailto:neynjauke@gmail.com">Discuss a project <span>↗</span></a></div><a class="section-next round-link" href="#services" aria-label="Scroll to How I Work section"><span>↓</span></a>
+      <div class="work-footer"><span>More work available on request</span><a href="mailto:qevohnjau@gmail.com">Discuss a project <span>↗</span></a></div><a class="section-next round-link" href="#services" aria-label="Scroll to How I Work section"><span>↓</span></a>
     </section>
     <section id="services" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">02 / How I work</p><p class="section-aside">Strategy first.<br />Execution with intent.</p></div>
@@ -74,7 +74,7 @@ document.querySelector('#app').innerHTML = `
         <div class="service-item"><span>03</span><div><h3>Grow with intent</h3><p>Thoughtful execution that keeps momentum strong from kickoff through launch and beyond.</p></div></div>
       </div></div><a class="section-next round-link" href="#contact" aria-label="Scroll to contact section"><span>↓</span></a>
     </section>
-    <section id="contact" class="contact section-wrap"><p class="eyebrow">03 / Start a conversation</p><div class="contact-content"><h2>Have a good<br /><em>idea in motion?</em></h2><a class="contact-link" href="mailto:neynjauke@gmail.com">neynjauke@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+254727843135">+254 727 843 135 <span>↗</span></a></div><div class="contact-bottom"><p>For partnerships, product thinking, and digital growth conversations across Kenya and beyond.</p><div class="social-links"><a href="https://www.linkedin.com/in/kelvin-njau" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/v0qeh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
+    <section id="contact" class="contact section-wrap"><p class="eyebrow">03 / Start a conversation</p><div class="contact-content"><h2>Have a good<br /><em>idea in motion?</em></h2><a class="contact-link" href="mailto:qevohnjau@gmail.com">qevohnjau@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+254727843135">+254 727 843 135 <span>↗</span></a></div><div class="contact-bottom"><p>For partnerships, product thinking, and digital growth conversations across Kenya and beyond.</p><div class="social-links"><a href="https://www.linkedin.com/in/kelvin-njau" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/v0qeh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
   </main>
   <footer class="site-footer"><span>© 2026 Kelvin Njau</span><span>Techpreneur • Kenya</span><a href="#top">Back to top ↑</a></footer>
 `
