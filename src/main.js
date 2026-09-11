@@ -55,7 +55,7 @@ document.querySelector('#app').innerHTML = `
       <div class="section-heading"><p class="eyebrow">01 / Selected work</p><p class="section-aside">A few things I've made useful<br />and made to last.</p></div>
       <div class="filter-row" role="group" aria-label="Filter selected work"><button class="filter-button is-active" data-filter="All">All work</button><button class="filter-button" data-filter="Branding">Branding</button><button class="filter-button" data-filter="Web design">Web design</button><button class="filter-button" data-filter="Campaigns">Campaigns</button></div>
       <div class="project-grid">${projects.map(projectMarkup).join('')}</div>
-      <div class="work-footer"><span>More work available on request</span><a href="mailto:hello@maraellis.studio">View archive <span>↗</span></a></div>
+      <div class="work-footer"><span>More work available on request</span><a href="mailto:neynjauke@gmail.com">View archive <span>↗</span></a></div>
     </section>
     <section id="services" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">02 / How I work</p><p class="section-aside">Strategy first.<br />Execution with intent.</p></div>
