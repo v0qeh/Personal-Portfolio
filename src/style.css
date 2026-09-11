@@ -128,8 +128,8 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
   .hero-bottom { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px; margin-top: 38px; padding-bottom: 0; }
   .hero-intro { width: auto; max-width: 100%; min-width: 0; font-size: 13px; line-height: 1.5; }
   .round-link { grid-column: 2; grid-row: 1; align-self: end; width: 46px; height: 46px; margin-left: 0; }
-  .hero-note { position: static; align-self: flex-start; max-width: 100%; margin-top: 0; line-height: 1.45; overflow-wrap: anywhere; }
-  .hero-bio { margin-top: 20px; padding-top: 14px; }
+  .hero-note { position: static; align-self: flex-start; max-width: 100%; margin-top: 16px; line-height: 1.45; overflow-wrap: anywhere; }
+  .hero-bio { margin-top: 24px; padding-top: 14px; }
   .hero-bio p { font-size: 13px; line-height: 1.5; }
   .work, .approach, .contact { padding-bottom: 88px; }
   .section-heading { align-items: flex-start; gap: 24px; }
