@@ -23,7 +23,7 @@ button { font: inherit; }
 .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
 .menu-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 .header-cta span, .project-arrow, .contact-link span, .work-footer a span { color: var(--coral); font-size: 18px; }
-.hero { min-height: 650px; padding-top: 105px; position: relative; display: flex; flex-direction: column; }
+.hero { min-height: auto; padding-top: 105px; padding-bottom: 78px; position: relative; display: flex; flex-direction: column; }
 .hero-kicker, .eyebrow, .hero-note, .filter-button, .project-meta > span, .work-footer, .service-item > span, .site-footer { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
 .hero-kicker { display: flex; align-items: center; gap: 12px; color: var(--muted); }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); border: 1px solid var(--ink); }
@@ -31,13 +31,13 @@ button { font: inherit; }
 h1, h2, h3, p { margin: 0; }
 h1 { max-width: 850px; margin-top: 48px; font-size: clamp(58px, 9vw, 128px); line-height: .91; letter-spacing: -.08em; font-weight: 600; }
 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
-.hero-bottom { display: flex; justify-content: space-between; align-items: end; margin-top: auto; padding-bottom: 42px; }
+.hero-bottom { display: flex; justify-content: space-between; align-items: end; margin-top: 120px; }
 .hero-intro { width: 300px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 .hero-bio { margin-top: 26px; max-width: 620px; padding: 18px 20px 0 0; border-top: 1px solid var(--line); }
 .hero-bio p { color: var(--muted); font-size: 15px; line-height: 1.7; }
 .round-link { width: 52px; height: 52px; display: grid; place-items: center; border: 1px solid var(--ink); border-radius: 50%; font-size: 22px; transition: background .25s ease, transform .25s ease; }
 .round-link:hover { background: var(--lime); transform: rotate(-12deg); }
-.hero-note { position: absolute; right: 0; bottom: 44px; color: var(--muted); }
+.hero-note { align-self: flex-end; margin-top: 24px; color: var(--muted); line-height: 1.6; }
 .hero-bio p { color: #4a4844; }
 .hero-note span { color: var(--coral); font-size: 16px; margin-left: 6px; }
 .work, .approach, .contact { border-top: 1px solid var(--line); padding-top: 24px; padding-bottom: 130px; }
