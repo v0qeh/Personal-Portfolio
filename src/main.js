@@ -1,5 +1,10 @@
 import './style.css'
 
+if (window.location.hash) {
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`)
+  window.scrollTo(0, 0)
+}
+
 const projects = [
   {
     name: 'Brand Direction', type: 'Concept / Strategy', year: '2026', category: 'Branding',
