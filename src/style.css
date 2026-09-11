@@ -37,6 +37,7 @@ em { font-family: var(--serif); font-weight: 500; letter-spacing: -.04em; }
 .hero-bio p { color: var(--muted); font-size: 15px; line-height: 1.7; }
 .round-link { width: 52px; height: 52px; display: grid; place-items: center; border: 1px solid var(--ink); border-radius: 50%; font-size: 22px; transition: background .25s ease, transform .25s ease; }
 .round-link:hover { background: var(--lime); transform: rotate(-12deg); }
+.section-next { margin: 56px 0 0 auto; }
 .hero-note { align-self: flex-end; margin-top: 24px; color: var(--muted); line-height: 1.6; }
 .hero-bio p { color: #4a4844; }
 .hero-note span { color: var(--coral); font-size: 16px; margin-left: 6px; }

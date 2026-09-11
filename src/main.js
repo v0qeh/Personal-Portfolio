@@ -49,13 +49,13 @@ document.querySelector('#app').innerHTML = `
         <div class="service-item"><span>01</span><div><h3>Founder-first thinking</h3><p>I bring strategic clarity to new ideas, helping teams focus on what matters before they scale.</p></div></div>
         <div class="service-item"><span>02</span><div><h3>Digital execution</h3><p>From strategy to web experiences, I design systems that feel intentional, usable, and memorable.</p></div></div>
         <div class="service-item"><span>03</span><div><h3>Long-term value</h3><p>I care about work that lasts — simple, thoughtful, and useful long after launch.</p></div></div>
-      </div></div>
+      </div></div><a class="section-next round-link" href="#work" aria-label="Scroll to selected focus"><span>↓</span></a>
     </section>
     <section id="work" class="work section-wrap">
       <div class="section-heading"><p class="eyebrow">01 / Selected focus</p><p class="section-aside">A few directions shaping<br />my work right now.</p></div>
       <div class="filter-row" role="group" aria-label="Filter selected focus"><button class="filter-button is-active" data-filter="All">All focus</button><button class="filter-button" data-filter="Branding">Branding</button><button class="filter-button" data-filter="Web design">Web design</button><button class="filter-button" data-filter="Campaigns">Campaigns</button></div>
       <div class="project-grid">${projects.map(projectMarkup).join('')}</div>
-      <div class="work-footer"><span>More work available on request</span><a href="mailto:neynjauke@gmail.com">Discuss a project <span>↗</span></a></div>
+      <div class="work-footer"><span>More work available on request</span><a href="mailto:neynjauke@gmail.com">Discuss a project <span>↗</span></a></div><a class="section-next round-link" href="#services" aria-label="Scroll to How I Work section"><span>↓</span></a>
     </section>
     <section id="services" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">02 / How I work</p><p class="section-aside">Strategy first.<br />Execution with intent.</p></div>
@@ -63,7 +63,7 @@ document.querySelector('#app').innerHTML = `
         <div class="service-item"><span>01</span><div><h3>Clarify the vision</h3><p>Positioning, messaging, and brand direction that help the right audience connect instantly.</p></div></div>
         <div class="service-item"><span>02</span><div><h3>Build the product</h3><p>Digital experiences, web platforms, and user journeys designed to feel simple and memorable.</p></div></div>
         <div class="service-item"><span>03</span><div><h3>Grow with intent</h3><p>Thoughtful execution that keeps momentum strong from kickoff through launch and beyond.</p></div></div>
-      </div></div>
+      </div></div><a class="section-next round-link" href="#contact" aria-label="Scroll to contact section"><span>↓</span></a>
     </section>
     <section id="contact" class="contact section-wrap"><p class="eyebrow">03 / Start a conversation</p><div class="contact-content"><h2>Have a good<br /><em>idea in motion?</em></h2><a class="contact-link" href="mailto:neynjauke@gmail.com">neynjauke@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+254727843135">+254 727 843 135 <span>↗</span></a></div><div class="contact-bottom"><p>For partnerships, product thinking, and digital growth conversations across Kenya and beyond.</p><div class="social-links"><a href="https://www.linkedin.com/in/kelvin-njau" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/v0qeh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
   </main>
