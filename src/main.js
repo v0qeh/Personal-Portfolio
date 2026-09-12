@@ -68,10 +68,10 @@ document.querySelector('#app').innerHTML = `
     </section>
     <section id="services" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">02 / How I work</p><p class="section-aside">Strategy first.<br />Execution with intent.</p></div>
-      <div class="approach-grid"><div class="approach-statement"><p>I work closely with founders and teams to sharpen the story, shape the product, and build digital experiences that support meaningful growth.</p><span class="big-mark">✳</span></div><div class="service-list">
-        <div class="service-item"><span>01</span><div><h3>Clarify the vision</h3><p>Positioning, messaging, and brand direction that help the right audience connect instantly.</p></div></div>
-        <div class="service-item"><span>02</span><div><h3>Build the product</h3><p>Digital experiences, web platforms, and user journeys designed to feel simple and memorable.</p></div></div>
-        <div class="service-item"><span>03</span><div><h3>Grow with intent</h3><p>Thoughtful execution that keeps momentum strong from kickoff through launch and beyond.</p></div></div>
+      <div class="approach-grid"><div class="approach-statement"><p>I partner with founders and teams to sharpen the story, shape the product, and build digital experiences that create real momentum.</p><span class="big-mark">✳</span></div><div class="service-list">
+        <div class="service-item"><span>01</span><div><h3>Define the direction</h3><p>Positioning, messaging, and brand strategy that help the right audience connect quickly and confidently.</p></div></div>
+        <div class="service-item"><span>02</span><div><h3>Build the product</h3><p>Web experiences, digital systems, and user journeys designed to feel clear, useful, and memorable.</p></div></div>
+        <div class="service-item"><span>03</span><div><h3>Grow with intention</h3><p>Thoughtful execution that keeps momentum strong from kickoff through launch and beyond.</p></div></div>
       </div></div><a class="section-next round-link" href="#contact" aria-label="Scroll to contact section"><span>↓</span></a>
     </section>
     <section id="contact" class="contact section-wrap"><p class="eyebrow">03 / Start a conversation</p><div class="contact-content"><h2>Have a good<br /><em>idea in motion?</em></h2><a class="contact-link" href="mailto:qevohnjau@gmail.com">qevohnjau@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+254727843135">+254 727 843 135 <span>↗</span></a></div><div class="contact-bottom"><p>For partnerships, product thinking, and digital growth conversations across Kenya and beyond.</p><div class="social-links"><a href="https://www.linkedin.com/in/kelvin-njau" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/v0qeh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
@@ -85,6 +85,13 @@ document.querySelectorAll('.filter-button').forEach((button) => {
     button.classList.add('is-active')
     const filter = button.dataset.filter
     document.querySelectorAll('.project-card').forEach((card) => { card.hidden = filter !== 'All' && card.dataset.category !== filter })
+  })
+})
+
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   })
 })
 
