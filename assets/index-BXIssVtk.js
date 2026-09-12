@@ -23,7 +23,6 @@
       <div class="hero-bottom"><p class="hero-intro">I help founders, startups, and ambitious teams turn bold ideas into products, brands, and digital experiences with real traction.</p></div>
       <div class="hero-note">Available for product, brand, and digital growth work <span>↗</span></div>
       <div class="hero-bio"><p>I'm a Kenyan techpreneur focused on building useful digital systems, meaningful brands, and ventures that turn strategy into traction. I work best where product thinking, design clarity, and execution meet.</p></div>
-      <a class="hero-next round-link" href="#about" aria-label="Scroll to About section"><span>↓</span></a>
     </section>
     <section id="about" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">00 / About</p><p class="section-aside">Building ideas with clarity<br />and a long-term view.</p></div>
@@ -31,13 +30,13 @@
         <div class="service-item"><span>01</span><div><h3>Founder-first thinking</h3><p>I bring strategic clarity to new ideas, helping teams focus on what matters before they scale.</p></div></div>
         <div class="service-item"><span>02</span><div><h3>Digital execution</h3><p>From strategy to web experiences, I design systems that feel intentional, usable, and memorable.</p></div></div>
         <div class="service-item"><span>03</span><div><h3>Long-term value</h3><p>I care about work that lasts — simple, thoughtful, and useful long after launch.</p></div></div>
-      </div></div><a class="section-next round-link" href="#work" aria-label="Scroll to selected focus"><span>↓</span></a>
+      </div></div>
     </section>
     <section id="work" class="work section-wrap">
       <div class="section-heading"><p class="eyebrow">01 / Selected focus</p><p class="section-aside">A few directions shaping<br />my work right now.</p></div>
       <div class="filter-row" role="group" aria-label="Filter selected focus"><button class="filter-button is-active" data-filter="All">All focus</button><button class="filter-button" data-filter="Branding">Branding</button><button class="filter-button" data-filter="Web design">Web design</button><button class="filter-button" data-filter="Campaigns">Campaigns</button></div>
       <div class="project-grid">${e.map(t).join(``)}</div>
-      <div class="work-footer"><span>More work available on request</span><a href="mailto:qevohnjau@gmail.com">Discuss a project <span>↗</span></a></div><a class="section-next round-link" href="#services" aria-label="Scroll to How I Work section"><span>↓</span></a>
+      <div class="work-footer"><span>More work available on request</span><a href="mailto:qevohnjau@gmail.com">Discuss a project <span>↗</span></a></div>
     </section>
     <section id="services" class="approach section-wrap">
       <div class="section-heading"><p class="eyebrow">02 / How I work</p><p class="section-aside">Strategy first.<br />Execution with intent.</p></div>
@@ -45,9 +44,10 @@
         <div class="service-item"><span>01</span><div><h3>Define the direction</h3><p>Positioning, messaging, and brand strategy that help the right audience connect quickly and confidently.</p></div></div>
         <div class="service-item"><span>02</span><div><h3>Build the product</h3><p>Web experiences, digital systems, and user journeys designed to feel clear, useful, and memorable.</p></div></div>
         <div class="service-item"><span>03</span><div><h3>Grow with intention</h3><p>Thoughtful execution that keeps momentum strong from kickoff through launch and beyond.</p></div></div>
-      </div></div><a class="section-next round-link" href="#contact" aria-label="Scroll to contact section"><span>↓</span></a>
+      </div></div>
     </section>
     <section id="contact" class="contact section-wrap"><p class="eyebrow">03 / Start a conversation</p><div class="contact-content"><h2>Have a good<br /><em>idea in motion?</em></h2><a class="contact-link" href="mailto:qevohnjau@gmail.com">qevohnjau@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+254727843135">+254 727 843 135 <span>↗</span></a></div><div class="contact-bottom"><p>For partnerships, product thinking, and digital growth conversations across Kenya and beyond.</p><div class="social-links"><a href="https://www.linkedin.com/in/kelvin-njau" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/v0qeh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
   </main>
+  <a class="fixed-next round-link" href="#about" aria-label="Scroll to About section"><span>↓</span></a>
   <footer class="site-footer"><span>© 2026 Kelvin Njau</span><span>Techpreneur • Kenya</span><a href="#top">Back to top ↑</a></footer>
-`,document.querySelectorAll(`.filter-button`).forEach(e=>{e.addEventListener(`click`,()=>{document.querySelectorAll(`.filter-button`).forEach(e=>e.classList.remove(`is-active`)),e.classList.add(`is-active`);let t=e.dataset.filter;document.querySelectorAll(`.project-card`).forEach(e=>{e.hidden=t!==`All`&&e.dataset.category!==t})})});var n=document.querySelector(`.menu-toggle`),r=document.querySelector(`.nav-links`);n&&r&&(n.addEventListener(`click`,()=>{let e=r.classList.toggle(`is-open`);n.classList.toggle(`is-open`,e),n.setAttribute(`aria-expanded`,String(e)),n.setAttribute(`aria-label`,e?`Close navigation menu`:`Open navigation menu`)}),r.querySelectorAll(`a`).forEach(e=>{e.addEventListener(`click`,()=>{r.classList.remove(`is-open`),n.classList.remove(`is-open`),n.setAttribute(`aria-expanded`,`false`),n.setAttribute(`aria-label`,`Open navigation menu`)})}));
+`,document.querySelectorAll(`.filter-button`).forEach(e=>{e.addEventListener(`click`,()=>{document.querySelectorAll(`.filter-button`).forEach(e=>e.classList.remove(`is-active`)),e.classList.add(`is-active`);let t=e.dataset.filter;document.querySelectorAll(`.project-card`).forEach(e=>{e.hidden=t!==`All`&&e.dataset.category!==t})})}),document.querySelectorAll(`a[href="#top"]`).forEach(e=>{e.addEventListener(`click`,e=>{e.preventDefault(),window.scrollTo({top:0,behavior:`smooth`})})});var n=document.querySelector(`.fixed-next`),r=[...document.querySelectorAll(`main > section`)],i=()=>{let e=window.scrollY+window.innerHeight*.55,t=r[r.findIndex(t=>{let n=t.getBoundingClientRect().top+window.scrollY;return e>=n&&e<n+t.offsetHeight})+1];n.hidden=!t,t&&(n.href=`#${t.id}`,n.setAttribute(`aria-label`,`Scroll to ${t.querySelector(`.eyebrow`)?.textContent.replace(/^\d+ \/ /,``)||`next section`}`))};n&&(i(),window.addEventListener(`scroll`,i,{passive:!0}),window.addEventListener(`resize`,i));var a=document.querySelector(`.menu-toggle`),o=document.querySelector(`.nav-links`);a&&o&&(a.addEventListener(`click`,()=>{let e=o.classList.toggle(`is-open`);a.classList.toggle(`is-open`,e),a.setAttribute(`aria-expanded`,String(e)),a.setAttribute(`aria-label`,e?`Close navigation menu`:`Open navigation menu`)}),o.querySelectorAll(`a`).forEach(e=>{e.addEventListener(`click`,()=>{o.classList.remove(`is-open`),a.classList.remove(`is-open`),a.setAttribute(`aria-expanded`,`false`),a.setAttribute(`aria-label`,`Open navigation menu`)})}));
