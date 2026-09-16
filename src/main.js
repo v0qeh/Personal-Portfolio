@@ -76,7 +76,7 @@ document.querySelector('#app').innerHTML = `
     <section id="contact" class="contact section-wrap"><p class="eyebrow">03 / Start a conversation</p><div class="contact-content"><h2>Have a good<br /><em>idea in motion?</em></h2><a class="contact-link" href="mailto:qevohnjau@gmail.com">qevohnjau@gmail.com <span>↗</span></a><a class="contact-link" href="tel:+254727843135">+254 727 843 135 <span>↗</span></a></div><div class="contact-bottom"><p>For partnerships, product thinking, and digital growth conversations across Kenya and beyond.</p><div class="social-links"><a href="https://www.linkedin.com/in/kelvin-njau" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/v0qeh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
   </main>
   <a class="fixed-next round-link" href="#about" aria-label="Scroll to About section"><span>↓</span></a>
-  <footer class="site-footer"><span>© 2026 Kelvin Njau</span><span>Techpreneur • Kenya</span><a href="#top">Back to top ↑</a></footer>
+  <footer id="footer" class="site-footer"><span>© 2026 Kelvin Njau</span><span>Techpreneur • Kenya</span><a href="#top">Back to top ↑</a></footer>
 `
 
 document.querySelectorAll('.filter-button').forEach((button) => {
@@ -97,19 +97,27 @@ document.querySelectorAll('a[href="#top"]').forEach((link) => {
 
 const fixedNext = document.querySelector('.fixed-next')
 const sections = [...document.querySelectorAll('main > section')]
+const footer = document.querySelector('#footer')
+const scrollTargets = [...sections, footer].filter(Boolean)
 
 const updateNextSection = () => {
+  const atPageEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 1
+  if (atPageEnd) {
+    fixedNext.hidden = true
+    return
+  }
+
   const scrollMarker = window.scrollY + window.innerHeight * 0.55
-  const currentIndex = sections.findIndex((section) => {
-    const top = section.getBoundingClientRect().top + window.scrollY
-    return scrollMarker >= top && scrollMarker < top + section.offsetHeight
+  const currentIndex = scrollTargets.findIndex((target) => {
+    const top = target.getBoundingClientRect().top + window.scrollY
+    return scrollMarker >= top && scrollMarker < top + target.offsetHeight
   })
-  const nextSection = sections[currentIndex + 1]
+  const nextSection = scrollTargets[currentIndex + 1]
 
   fixedNext.hidden = !nextSection
   if (nextSection) {
     fixedNext.href = `#${nextSection.id}`
-    fixedNext.setAttribute('aria-label', `Scroll to ${nextSection.querySelector('.eyebrow')?.textContent.replace(/^\d+ \/ /, '') || 'next section'}`)
+    fixedNext.setAttribute('aria-label', `Scroll to ${nextSection.querySelector('.eyebrow')?.textContent.replace(/^\d+ \/ /, '') || 'footer'}`)
   }
 }
 
